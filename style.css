@@ -554,25 +554,22 @@ h1 {
 }
 
 .app-mockup {
-    width: 230px;
-    height: auto;
-    /* Physically crop the outer 3.5% of the raw image pixels to hide the metallic rim baked into the file */
-    clip-path: inset(3.5% 3.5% 3.5% 3.5% round 10%);
-    /* Apply a soft drop shadow to the new clipped shape */
-    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4));
+    height: 520px;
+    width: auto;
+    object-fit: contain;
     z-index: 2;
     display: block;
 }
 
 @media (min-width: 992px) {
     .app-mockup {
-        width: 260px;
+        height: 580px;
     }
 }
 
 @media (max-width: 600px) {
     .app-mockup {
-        width: 160px;
+        height: 380px;
     }
     .mockup-container {
         gap: 12px;
@@ -581,7 +578,7 @@ h1 {
 
 @media (max-width: 380px) {
     .app-mockup {
-        width: 140px;
+        height: 320px;
     }
 }
 
