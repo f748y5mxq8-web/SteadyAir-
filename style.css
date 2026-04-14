@@ -163,12 +163,6 @@ h1 {
     gap: 12px;
 }
 
-@media (max-width: 991px) {
-    #feature-support {
-        order: 3;
-    }
-}
-
 @media (min-width: 992px) {
     .feature-item {
         justify-content: flex-start;
@@ -374,23 +368,28 @@ h1 {
     margin-bottom: 6px;
 }
 
-/* Audio Mobile Centering */
+/* Compact Audio Preview on Mobile */
 @media (max-width: 600px) {
     .audio-preview-card {
-        flex-direction: column;
-        text-align: center;
-        padding: 24px;
+        flex-direction: row;
+        padding: 16px;
         gap: 16px;
+        margin-top: 32px;
     }
     .audio-details {
-        align-items: center;
+        align-items: flex-start;
+        text-align: left;
         width: 100%;
     }
-    .audio-track {
-        width: 100%;
+    .play-btn {
+        width: 44px;
+        height: 44px;
     }
-    .audio-progress-bar {
-        width: 100%;
+    .audio-text h4 {
+        font-size: 0.9375rem;
+    }
+    .audio-text p {
+        font-size: 0.75rem;
     }
 }
 
@@ -557,32 +556,23 @@ h1 {
 .app-mockup {
     width: 230px;
     height: auto;
-    border-radius: 32px;
-    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4), var(--shadow-glow);
-    border: 1px solid rgba(255, 255, 255, 0.08); /* Thin premium stroke instead of bulky solid border */
+    border-radius: 36px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Soft depth only, removed neon glow rim */
     z-index: 2;
     display: block;
-}
-
-.app-mockup.offset {
-    margin-top: 60px;
-    z-index: 1;
 }
 
 @media (min-width: 992px) {
     .app-mockup {
         width: 260px;
-        border-radius: 36px;
+        border-radius: 40px;
     }
 }
 
 @media (max-width: 600px) {
     .app-mockup {
         width: 160px;
-        border-radius: 20px;
-    }
-    .app-mockup.offset {
-        margin-top: 40px;
+        border-radius: 28px;
     }
     .mockup-container {
         gap: 12px;
@@ -592,9 +582,6 @@ h1 {
 @media (max-width: 380px) {
     .app-mockup {
         width: 140px;
-    }
-    .app-mockup.offset {
-        margin-top: 32px;
     }
 }
 
