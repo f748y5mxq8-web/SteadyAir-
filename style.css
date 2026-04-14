@@ -556,8 +556,10 @@ h1 {
 .app-mockup {
     width: 230px;
     height: auto;
-    border-radius: 36px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Soft depth only, removed neon glow rim */
+    /* Physically crop the outer 3.5% of the raw image pixels to hide the metallic rim baked into the file */
+    clip-path: inset(3.5% 3.5% 3.5% 3.5% round 10%);
+    /* Apply a soft drop shadow to the new clipped shape */
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4));
     z-index: 2;
     display: block;
 }
@@ -565,14 +567,12 @@ h1 {
 @media (min-width: 992px) {
     .app-mockup {
         width: 260px;
-        border-radius: 40px;
     }
 }
 
 @media (max-width: 600px) {
     .app-mockup {
         width: 160px;
-        border-radius: 28px;
     }
     .mockup-container {
         gap: 12px;
