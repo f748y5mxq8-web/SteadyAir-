@@ -34,7 +34,8 @@
                 </div>
 
                 <div class="waitlist-card">
-                    <form class="waitlist-form" name="Waitlist" method="POST" data-netlify="true">
+                    <form class="waitlist-form" name="Waitlist" method="POST" data-netlify="true" action="/success.html">
+                        <input type="hidden" name="form-name" value="Waitlist">
                         <input type="email" name="email" placeholder="Enter your email" required class="email-input">
                         <button type="submit" class="btn btn-primary">Join the waitlist</button>
                     </form>
@@ -95,7 +96,8 @@
         <div class="exit-modal-card">
             <h3>Before you go</h3>
             <p>Be first to know when SteadyAir launches.</p>
-            <form class="exit-form-wrapper" name="Exit Intent" method="POST" data-netlify="true">
+            <form class="exit-form-wrapper" name="Exit Intent" method="POST" data-netlify="true" action="/success.html">
+                <input type="hidden" name="form-name" value="Exit Intent">
                 <input type="email" name="email" placeholder="Enter your email" required>
                 <button type="submit" class="btn btn-primary">Join the waitlist</button>
             </form>
