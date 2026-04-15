@@ -27,7 +27,7 @@
                 <img src="assets/logo.png" alt="SteadyAir Logo" class="logo">
                 <span class="badge">Coming soon</span>
                 <h1>Feel calmer before and during every flight</h1>
-                <p class="subtitle">SteadyAir gives you gentle support for turbulence, takeoff, landing, and anxious moments before you fly — helping you feel calmer when it matters most.</p>
+                <p class="subtitle">SteadyAir gives you gentle support for turbulence, takeoff, landing, and anxious moments before you fly helping you feel calmer, steadier, and more in control when it matters most.</p>
                 
                 <div class="feature-highlights">
                     <div class="feature-item" id="feature-support">
@@ -44,16 +44,10 @@
                     </div>
                 </div>
 
-                <div class="waitlist-card">
-                    <form class="waitlist-form" name="Waitlist" method="POST" data-netlify="true" action="/success.html">
-                        <input type="hidden" name="form-name" value="Waitlist">
-                        <input type="email" name="email" placeholder="Enter your email" required class="email-input">
-                        <button type="submit" class="btn btn-primary">Join the waitlist</button>
-                    </form>
-                    <p class="privacy-text">We’ll only email you about launch updates.</p>
+                <div class="trust-block">
+                    <p class="emotional-line">Because fear of flying needs more than generic meditation.</p>
+                    <p class="trust-copy">Built for people who want calm, clear support when flying feels hard.</p>
                 </div>
-                
-                <p class="trust-copy">Built for people who want flying to feel more manageable.</p>
             </section>
             
             <section class="hero-visual">
@@ -61,46 +55,57 @@
                     <img src="assets/app-preview-1-framed.png" alt="SteadyAir App Preview - Calm Support" class="app-mockup">
                     <img src="assets/app-preview-2-framed.png" alt="SteadyAir App Preview - Grounding Exercises" class="app-mockup">
                 </div>
-                
-                <div class="audio-preview-card" id="audioCard">
-                    <audio id="steadyAudio" crossorigin="anonymous" preload="metadata" src="https://raw.githubusercontent.com/f748y5mxq8-web/Anna.audio/main/anna%20update2.mp3"></audio>
-                    
-                    <button class="play-btn" id="previewPlayBtn" aria-label="Play audio preview">
-                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                            <path d="M8 5v14l11-7z" id="playIconPath"/>
-                        </svg>
-                    </button>
-                    
-                    <div class="audio-details">
-                        <div class="audio-text">
-                            <span class="audio-label">AUDIO PREVIEW</span>
-                            <h4>Hear the calm</h4>
-                            <p>A first listen to Anna’s voice</p>
-                        </div>
-                        
-                        <div class="audio-track">
-                            <div class="audio-visualizer" id="audioVisualizer">
-                                <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
-                                <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
-                                <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
-                                <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
-                                <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
-                                <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
-                                <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
-                                <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
-                            </div>
-                            <span class="audio-time" id="audioTimeDisplay">--:--</span>
-                        </div>
-                        <div class="audio-progress-bar">
-                            <div class="audio-progress-fill" id="audioProgress"></div>
-                        </div>
-                    </div>
-                </div>
             </section>
         </main>
+
+        <div class="cta-group">
+            <div class="waitlist-card">
+                <h4 class="waitlist-heading">Join the waitlist for launch updates.</h4>
+                <form class="waitlist-form" name="Waitlist" method="POST" data-netlify="true" action="/success.html">
+                    <input type="hidden" name="form-name" value="Waitlist">
+                    <input type="email" name="email" placeholder="Enter your email" required class="email-input">
+                    <button type="submit" class="btn btn-primary">Join the waitlist</button>
+                </form>
+                <p class="privacy-text">We’ll only email you about launch updates.</p>
+            </div>
+            
+            <div class="audio-preview-card" id="audioCard">
+                <audio id="steadyAudio" crossorigin="anonymous" preload="metadata" src="https://raw.githubusercontent.com/f748y5mxq8-web/Anna.audio/main/anna%20update2.mp3"></audio>
+                
+                <button class="play-btn" id="previewPlayBtn" aria-label="Play audio preview">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                        <path d="M8 5v14l11-7z" id="playIconPath"/>
+                    </svg>
+                </button>
+                
+                <div class="audio-details">
+                    <div class="audio-text">
+                        <span class="audio-label">AUDIO PREVIEW</span>
+                        <h4>Hear the calm</h4>
+                        <p>A first listen to Anna’s voice</p>
+                    </div>
+                    
+                    <div class="audio-track">
+                        <div class="audio-visualizer" id="audioVisualizer">
+                            <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                            <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                            <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                            <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                            <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                            <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                            <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                            <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                        </div>
+                        <span class="audio-time" id="audioTimeDisplay">--:--</span>
+                    </div>
+                    <div class="audio-progress-bar">
+                        <div class="audio-progress-fill" id="audioProgress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <footer class="footer">
-            <p>Coming soon</p>
             <p>Join the waitlist for launch updates</p>
         </footer>
     <div class="exit-modal-overlay" id="exitModal">
@@ -116,6 +121,7 @@
         </div>
     </div>
 
+        </div><!-- end page-wrapper -->
     <script>
         const playBtn = document.getElementById('previewPlayBtn');
         const playIconPath = document.getElementById('playIconPath');
